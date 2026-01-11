@@ -103,6 +103,9 @@ ddev exec npx shadcn init
 
 -- Install Dashboard
 
+ddev exec npx shadcn@latest add dashboard-01 --overwrite
+
+
 ddev exec npx shadcn@latest add dashboard-01
 ddev exec npx shadcn@latest add login-03
 ddev exec npx shadcn@latest add signup-03
@@ -131,6 +134,20 @@ ddev artisan nightwatch:agent
 ddev list
 ddev delete laravel
 rm -rf laravel-ddev
+
+```
+
+# Deploy on GitHub
+
+```
+git init
+git status
+git add .
+git commit -m "Initial commit: Laravel DDEV"
+
+git remote add origin https://github.com/devrazec/laravel-ddev.git
+git branch -M main
+git push -u origin main
 
 ```
 
