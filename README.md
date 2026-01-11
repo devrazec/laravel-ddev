@@ -103,7 +103,7 @@ ddev exec npx shadcn init
 
 -- Install Dashboard
 
-ddev exec npx shadcn@latest add dashboard-01 --overwrite
+ddev exec npx shadcn@latest --overwrite add dashboard-01
 
 
 ddev exec npx shadcn@latest add dashboard-01
